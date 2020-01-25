@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+    {% block content %}
+	<h1>Home Page</h1>
+	<h3>Halo, {{ session['name'] }}</h3>
+    <ul>		
+		<li><a href="/">Index</a></li>
+		<li><a href="/home">Home</a></li>
+		<li><a href="/logout">Logout</a></li>
+    </ul>
+    {% endblock %}
+    
